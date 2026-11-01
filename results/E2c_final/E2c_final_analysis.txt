@@ -1,0 +1,16 @@
+BC-only 60 IAEphi E2c med 27.68 | unbias med 4.217 | raw med 12.94 | E2c<unbias in 2/5 | p(sign-flip,E2c-unbias<=obs)=0.9062
+BC-only 60 IAEtheta E2c med 0.02858 | unbias med 0.02876 | raw med 0.02832 | E2c<unbias in 3/5 | p(sign-flip,E2c-unbias<=obs)=0.5000
+BC-only 600 IAEphi E2c med 27.68 | unbias med 4.217 | raw med 89.63 | E2c<unbias in 2/5 | p(sign-flip,E2c-unbias<=obs)=0.9062
+BC-only 600 IAEtheta E2c med 0.02858 | unbias med 0.02876 | raw med 0.02832 | E2c<unbias in 3/5 | p(sign-flip,E2c-unbias<=obs)=0.6562
+BC+TD3 60 IAEphi E2c med 48.51 | unbias med 5.55 | raw med 111.6 | E2c<unbias in 2/5 | p(sign-flip,E2c-unbias<=obs)=0.9062
+BC+TD3 60 IAEtheta E2c med 0.03075 | unbias med 0.02962 | raw med 0.03442 | E2c<unbias in 2/5 | p(sign-flip,E2c-unbias<=obs)=0.8125
+BC+TD3 600 IAEphi E2c med 485.7 | unbias med 5.55 | raw med 1145 | E2c<unbias in 2/5 | p(sign-flip,E2c-unbias<=obs)=0.9062
+BC+TD3 600 IAEtheta E2c med 0.03075 | unbias med 0.02962 | raw med 0.03442 | E2c<unbias in 2/5 | p(sign-flip,E2c-unbias<=obs)=0.8125
+pi0 {('BC-only', 1, 60): '-2.29276052759264e-17', ('BC+TD3', 1, 60): '-1.17647048786945e-14', ('BC-only', 2, 60): '-1.47587788353198e-16', ('BC+TD3', 2, 60): '-1.47941927534489e-15', ('BC-only', 3, 60): '-6.65085472536524e-18', ('BC+TD3', 3, 60): '2.6667960495936e-17', ('BC-only', 4, 60): '-2.99866498107849e-16', ('BC+TD3', 4, 60): '-3.46777194430042e-16', ('BC-only', 5, 60): '-3.93166065517167e-16', ('BC+TD3', 5, 60): '1.10890275437027e-14'}
+BC-only phi_end max 0.937449536118894 rho [0.218, 0.196, 0.252, 0.2, 0.309]
+BC+TD3 phi_end max 3.87988685649298 rho [0.413, 0.129, 0.282, 0.136, 0.37]
+per seed E2c td3 IAEphi60 [203.122, 3.071, 48.511, 2.941, 127.19]
+per seed unbias td3 [5.975, 3.541, 12.194, 5.443, 5.55]
+per seed raw td3 [111.57, 9.013, 297.475, 68.817, 153.408]
+per seed E2c bco [27.679, 2.701, 55.311, 39.222, 3.607]
+per seed unbias bco [4.828, 3.994, 4.217, 4.049, 11.876]

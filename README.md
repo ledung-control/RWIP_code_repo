@@ -20,6 +20,15 @@ Tables 4–11 and Figures 5–7: run `Compare_v13_robust.m` on the stored agents
 
 ## Folder layout
 - `matlab_core/` the authors' plant, PSO, FLC/SMC-ESO, training and evaluation code (unchanged).
-- `round5_scripts/` revision experiments E0–E5, E7/E8 and the E2a/E2b training variants.
+- `round5_scripts/` revision experiments E0–E5, E7/E8 and the E2a/E2b training variants (E2a, E2b, E2c).
 - `results/` result CSVs and analysis text; `docs/` protocol and reports; `python_posthoc/` independent Python re-implementation and analysis scripts.
-- `checkpoints/` trained actors (MATLAB `.mat`, about 1.3 MB each): `stored_paper/` (BC-only and BC+TD3, seeds 1-5, the networks of Tables 4-11), `E1_retuned/` (retuned fine-tuning), `E2a_bias_free/` (actor without bias, pi(0)=0 by construction), `E2b_origin_penalty/` (penalty 100*pi(0)^2 in the BC loss). File names: `agent_bconly_seed<k>.mat` = BC-only, `agent_bc_seed<k>.mat` = BC+TD3.
+- `checkpoints/` trained actors (MATLAB `.mat`, about 1.3 MB each): `stored_paper/` (BC-only and BC+TD3, seeds 1-5, the networks of Tables 4-11), `E1_retuned/` (retuned fine-tuning), `E2a_bias_free/` (actor without bias, pi(0)=0 by construction), `E2b_origin_penalty/` (penalty 100*pi(0)^2 in the BC loss), `E2c_gated/` (actor output multiplied by tanh(||o4||/0.05), pi(0)=0 by the gate). File names: `agent_bconly_seed<k>.mat` = BC-only, `agent_bc_seed<k>.mat` = BC+TD3.
+
+
+## Supplementary report
+`docs/Supplementary_Report_Tables_S1-S11.docx` holds Tables S1-S11 (clipping frequency, parameter change, residual near the origin, paired statistics, ...). Tables S12-S13 (ESO-bandwidth sweep, oracle gain) are `results/E7E8_MATLAB_2026a.csv`. Round-5 protocol and reports: `docs/Round5_Protocol_E1-E8.md`, `docs/Round5_E2a_Report.md`, `Round5_E2b_Report.md`, `Round5_E2c_Report.md`.
+
+## Known gaps
+- The original script of the bias-injection experiment was not kept; the injection results were regenerated with `python_posthoc/phlib.py` under the stated clipping order.
+- Python analysis scripts read `python_posthoc/results/runs_600s.csv` (relative paths may need editing).
+- Training and evaluation need MATLAB R2026a with the toolboxes listed above; no GPU is required.
