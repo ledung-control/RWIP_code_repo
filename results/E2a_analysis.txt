@@ -1,0 +1,16 @@
+BC-only 60 IAEphi E2a med 3.862 | unbias med 4.217 | raw med 12.94 | E2a<unbias in 5/5 | p(sign-flip,E2a-unbias<=obs)=0.0312
+BC-only 60 IAEtheta E2a med 0.02836 | unbias med 0.02876 | raw med 0.02832 | E2a<unbias in 3/5 | p(sign-flip,E2a-unbias<=obs)=0.2188
+BC-only 600 IAEphi E2a med 3.862 | unbias med 4.217 | raw med 89.63 | E2a<unbias in 4/5 | p(sign-flip,E2a-unbias<=obs)=0.5312
+BC-only 600 IAEtheta E2a med 0.02836 | unbias med 0.02876 | raw med 0.02832 | E2a<unbias in 3/5 | p(sign-flip,E2a-unbias<=obs)=0.5938
+BC+TD3 60 IAEphi E2a med 3.676 | unbias med 5.55 | raw med 111.6 | E2a<unbias in 5/5 | p(sign-flip,E2a-unbias<=obs)=0.0312
+BC+TD3 60 IAEtheta E2a med 0.02728 | unbias med 0.02962 | raw med 0.03442 | E2a<unbias in 2/5 | p(sign-flip,E2a-unbias<=obs)=0.6875
+BC+TD3 600 IAEphi E2a med 3.676 | unbias med 5.55 | raw med 1145 | E2a<unbias in 5/5 | p(sign-flip,E2a-unbias<=obs)=0.0312
+BC+TD3 600 IAEtheta E2a med 0.02728 | unbias med 0.02962 | raw med 0.03442 | E2a<unbias in 2/5 | p(sign-flip,E2a-unbias<=obs)=0.6875
+pi0 {('BC-only', 1, 60): '0', ('BC+TD3', 1, 60): '0', ('BC-only', 2, 60): '0', ('BC+TD3', 2, 60): '0', ('BC-only', 3, 60): '0', ('BC+TD3', 3, 60): '0', ('BC-only', 4, 60): '0', ('BC+TD3', 4, 60): '0', ('BC-only', 5, 60): '0', ('BC+TD3', 5, 60): '0'}
+BC-only phi_end max 1.0309918281462e-06 rho [0.266, 0.138, 0.245, 0.198, 0.266]
+BC+TD3 phi_end max 9.60866521294556e-15 rho [0.179, 0.111, 0.202, 0.18, 0.75]
+per seed E2a td3 IAEphi60 [2.666, 3.007, 4.396, 4.259, 3.676]
+per seed unbias td3 [5.975, 3.541, 12.194, 5.443, 5.55]
+per seed raw td3 [111.57, 9.013, 297.475, 68.817, 153.408]
+per seed E2a bco [4.172, 3.321, 3.862, 3.354, 4.664]
+per seed unbias bco [4.828, 3.994, 4.217, 4.049, 11.876]

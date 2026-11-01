@@ -1,0 +1,46 @@
+id,check,status,detail
+D1,tracked file with changes accepted == clean file (non-empty paragraphs; equation-number paragraphs excluded because LibreOffice re-renders equations),PASS,248 vs 248 paragraphs; 0 non-equation differences
+D2a,"clean: the redrawn Figure 4 is embedded, byte-identical to Figure4_round4.png",PASS,
+D2b,clean: the old Figure 4 raster (original image5.png) is not in the file,PASS,
+D2c,"tracked: both the old and the new Figure 4 are present, the old one in a tracked deletion and the new one in a tracked insertion",PASS,
+D3-0.111-RWIP_Round4_WORKING_CLEA,"RWIP_Round4_WORKING_CLEAN.docx: no ""0.111"" (0.110 is the recomputed value)",PASS,
+D3-0.111-RWIP_Round4_WORKING_TRAC,"RWIP_Round4_WORKING_TRACKED.docx: no ""0.111"" (0.110 is the recomputed value)",PASS,
+D3-0.111-Round4_Author_Decisions.,"Round4_Author_Decisions.docx: no ""0.111"" (0.110 is the recomputed value)",PASS,
+D3-0.111-Round4_CrossCheck_Report,"Round4_CrossCheck_Report.docx: no ""0.111"" (0.110 is the recomputed value)",PASS,
+D3-0.111-Round4_Experiment_Plan.d,"Round4_Experiment_Plan.docx: no ""0.111"" (0.110 is the recomputed value)",PASS,
+D3-0.111-Round4_IJIES_Pages_and_S,"Round4_IJIES_Pages_and_Supplementary.docx: no ""0.111"" (0.110 is the recomputed value)",PASS,
+D3-0.111-Round4_Matrix.docx,"Round4_Matrix.docx: no ""0.111"" (0.110 is the recomputed value)",PASS,
+D3-0.111-Round4_PostHoc_Report.do,"Round4_PostHoc_Report.docx: no ""0.111"" (0.110 is the recomputed value)",PASS,
+D3-0.111-Round4_Response_to_Revie,"Round4_Response_to_Reviewers.docx: no ""0.111"" (0.110 is the recomputed value)",PASS,
+D3-prereg-_WORKING_,"RWIP_Round4_WORKING_CLEAN.docx: no ""pre-registered""/""pre-specified""/""fixed before training""",PASS,
+D3-prereg-_WORKING_,"RWIP_Round4_WORKING_TRACKED.docx: no ""pre-registered""/""pre-specified""/""fixed before training""",PASS,
+D3-disp,"accepted manuscript text: ""displacement ≈ 0.36 units"" absent (0.36 appears only as a nominal budget)",PASS,
+D3-S19,"no document still says ""S1–S9"" as the supplementary range",PASS,
+D4a,manuscript carries exactly 7 [AUTHOR CONFIRM] markers,PASS,7
+D4b-Author_Decisi,Round4_Author_Decisions.docx states NOT READY,PASS,
+D4c-Author_Decisi,"Round4_Author_Decisions.docx never says ""ready for submission"" without NOT",PASS,
+D4b-Experiment_Pl,Round4_Experiment_Plan.docx states NOT READY,PASS,
+D4c-Experiment_Pl,"Round4_Experiment_Plan.docx never says ""ready for submission"" without NOT",PASS,
+D4b-IJIES_Pages_a,Round4_IJIES_Pages_and_Supplementary.docx states NOT READY,PASS,
+D4c-IJIES_Pages_a,"Round4_IJIES_Pages_and_Supplementary.docx never says ""ready for submission"" without NOT",PASS,
+D4b-Matrix.docx,Round4_Matrix.docx states NOT READY,PASS,
+D4c-Matrix.docx,"Round4_Matrix.docx never says ""ready for submission"" without NOT",PASS,
+D4b-PostHoc_Repor,Round4_PostHoc_Report.docx states NOT READY,PASS,
+D4c-PostHoc_Repor,"Round4_PostHoc_Report.docx never says ""ready for submission"" without NOT",PASS,
+D4b-Response_to_R,Round4_Response_to_Reviewers.docx states NOT READY,PASS,
+D4c-Response_to_R,"Round4_Response_to_Reviewers.docx never says ""ready for submission"" without NOT",PASS,
+D5a,Table captions 1..11 contiguous,PASS,"[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]"
+D5b,Figure captions 1..7 contiguous,PASS,"[1, 2, 3, 4, 5, 6, 7]"
+D5c,every table is cited in the text,PASS,
+D5d,every figure is cited in the text,PASS,
+D6,supplementary tables cited in the manuscript exist in the post-hoc report,PASS,"cited ['S1', 'S10', 'S2', 'S3', 'S4', 'S5', 'S6', 'S7']; defined ['S1', 'S10', 'S11', 'S2', 'S3', 'S4', 'S5', 'S6', 'S7', 'S8', 'S9']"
+D6b,Table S5 and Table S10 are cited in the manuscript,PASS,
+D7-Response_to,Round4_Response_to_Reviewers.docx: section numbers cited exist in the manuscript,PASS,missing: []
+D7-Matrix.docx,Round4_Matrix.docx: section numbers cited exist in the manuscript,PASS,missing: []
+D7-Author_Deci,Round4_Author_Decisions.docx: section numbers cited exist in the manuscript,PASS,missing: []
+D8,decimal numbers (≥2 decimals) in the letter occur in the manuscript or post-hoc report,PASS,65 checked; not found: []
+D9a,matrix lists each of 17 reviewer codes once,PASS,
+D9b,letter answers each of the 17 codes,PASS,
+D9c,decision codes cited in the matrix exist in the decisions list,PASS,[]
+D10a,"fee table arithmetic (22,19,17,14,12,10 pages -> [600, 450, 350, 200, 100, 0])",PASS,
+D10b,Plan-10 table page counts equal the measured log and fees = 50 x (pages-10),PASS,17 rows

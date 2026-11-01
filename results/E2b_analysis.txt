@@ -1,0 +1,23 @@
+BC-only 60 IAEphi E2a med 4.503 | unbias med 4.217 | raw med 12.94 | E2a<unbias in 2/5 | p(sign-flip,E2a-unbias<=obs)=0.4062
+BC-only 60 IAEtheta E2a med 0.02883 | unbias med 0.02876 | raw med 0.02832 | E2a<unbias in 2/5 | p(sign-flip,E2a-unbias<=obs)=0.2500
+BC-only 600 IAEphi E2a med 7.72 | unbias med 4.217 | raw med 89.63 | E2a<unbias in 1/5 | p(sign-flip,E2a-unbias<=obs)=0.9062
+BC-only 600 IAEtheta E2a med 0.02883 | unbias med 0.02876 | raw med 0.02832 | E2a<unbias in 2/5 | p(sign-flip,E2a-unbias<=obs)=0.2500
+BC+TD3 60 IAEphi E2a med 44.99 | unbias med 5.55 | raw med 111.6 | E2a<unbias in 1/5 | p(sign-flip,E2a-unbias<=obs)=0.9688
+BC+TD3 60 IAEtheta E2a med 0.03172 | unbias med 0.02962 | raw med 0.03442 | E2a<unbias in 3/5 | p(sign-flip,E2a-unbias<=obs)=0.7812
+BC+TD3 600 IAEphi E2a med 445.6 | unbias med 5.55 | raw med 1145 | E2a<unbias in 0/5 | p(sign-flip,E2a-unbias<=obs)=1.0000
+BC+TD3 600 IAEtheta E2a med 0.03172 | unbias med 0.02962 | raw med 0.03442 | E2a<unbias in 3/5 | p(sign-flip,E2a-unbias<=obs)=0.7812
+pi0 {('BC-only', 1, 60): '-0.000161866075359285', ('BC+TD3', 1, 60): '0.0787810385227203', ('BC-only', 2, 60): '-0.000212021870538592', ('BC+TD3', 2, 60): '0.067374512553215', ('BC-only', 3, 60): '0.000191629107575864', ('BC+TD3', 3, 60): '-0.0635113343596458', ('BC-only', 4, 60): '0.000700175296515226', ('BC+TD3', 4, 60): '-0.001470509567298', ('BC-only', 5, 60): '5.23502822034061e-05', ('BC+TD3', 5, 60): '0.0329563058912754'}
+BC-only phi_end max 0.0118884995525125 rho [0.252, 0.157, 0.224, 0.204, 0.28]
+BC+TD3 phi_end max 1.07494060382498 rho [0.245, 0.127, 0.227, 0.155, 0.226]
+per seed E2a td3 IAEphi60 [57.331, 48.171, 44.988, 3.876, 36.383]
+per seed unbias td3 [5.975, 3.541, 12.194, 5.443, 5.55]
+per seed raw td3 [111.57, 9.013, 297.475, 68.817, 153.408]
+per seed E2a bco [4.503, 4.193, 4.481, 4.65, 7.964]
+per seed unbias bco [4.828, 3.994, 4.217, 4.049, 11.876]
+pi0 BC-only [-0.00016, -0.00021, 0.00019, 0.0007, 5e-05]
+pi0 BC+TD3 [0.07878, 0.06737, -0.06351, -0.00147, 0.03296]
+phi_end600 BC-only [0.00461, 0.00428, -0.006, -0.01189, -0.0013]
+phi_end600 BC+TD3 [-1.0749, -0.8876, 0.7419, 0.0169, -0.655]
+IAEphi600 BC+TD3 [637.8, 527.5, 445.6, 13.0, 390.1]
+IAEphi60 BC-only raw stored [12.94, 8.37, 26.08, 30.17, 11.64]
+rho BC+TD3 [0.245, 0.127, 0.227, 0.155, 0.226]

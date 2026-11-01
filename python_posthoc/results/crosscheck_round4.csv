@@ -1,0 +1,187 @@
+id,location,claim,manuscript_value,recomputed,status,source
+T5-1,3.2/Table 5,SMC-ESO nominal IAEtheta,0.13692,0.13692402838274448,PASS,Compare_v13_robust_results.mat R1
+T5-2,3.2/Table 5,SMC-ESO Kt-30% IAEtheta,5.4401,5.44011525841866,PASS,Compare_v13_robust_results.mat R1
+T5-3,3.2/Table 5,SMC-ESO adverse IAEtheta,7.2367,7.236679330596321,PASS,Compare_v13_robust_results.mat R1
+T5-4,3.2,"Kt-30% increase, stored (%)",3873.1,3873.0902769029526,PASS,Compare_v13_robust_results.mat R1
+T5-5,3.2,Kt-30% increase from rounded printed values (reviewer 3873.20),3873.196,3873.196026877009,PASS,arithmetic
+T5-6,3.2/Table 5,"adverse increase, stored (%)",5185.2,5185.178515466688,PASS,Compare_v13_robust_results.mat R1
+T5-7,3.2,"adverse increase, rounded printed values (%)",5185.3,5185.349108968741,PASS,arithmetic
+T5-8,3.2,IAE ratio Kt-30%,39.7,39.73090276902953,PASS,Compare_v13_robust_results.mat R1
+T5-9,3.2,PSO-FLC Kt-30% increase (%),13.27,13.274368434276184,PASS,Compare_v13_robust_results.mat R1
+T5-10,3.2,hybrid mgl-30% increase (%),9.46,9.459357757566412,PASS,Compare_v13_robust_results.mat R1
+T5-11,Table 5,PSO-FLC Kt-30% value,0.0277,0.02771019811561569,PASS,Compare_v13_robust_results.mat R1
+T5-12,Table 5,PSO-FLC adverse value,0.0263,0.026297084783020747,PASS,Compare_v13_robust_results.mat R1
+T5-13,Table 5,hybrid Kt-30% value,0.0274,0.02743217927919932,PASS,Compare_v13_robust_results.mat R1
+T5-14,Table 5,hybrid adverse value,0.027,0.02700406666326786,PASS,Compare_v13_robust_results.mat R1
+T5-15,3.2,hybrid largest of 7 cases is the mgl-30% case (+9.46),9.46,9.459357757566412,PASS,Compare_v13_robust_results.mat R1
+T5-16,3.2,PSO-FLC largest of 7 cases is Kt-30% (+13.27),13.27,13.274368434276184,PASS,Compare_v13_robust_results.mat R1
+OS-1,2.1.4/Table 4,"OS RK4 (MATLAB sim_rwip_v13, 600 s file)",0.005894,0.0058935877541630875,PASS,Test_LongHorizon_v13_results.mat R1(1)
+OS-2,2.1.4,OS RK4 Python re-evaluation,0.005894,0.005893587754163054,PASS,summary.json
+OS-3,2.1.4,OS Simulink/PSO evaluation (stored Mbest),0.005987,0.005986510282238331,PASS,pso_rwip_v13_result.mat
+OS-4,2.1.4,ts_theta Simulink,2.78,2.7800000000000002,PASS,pso_rwip_v13_result.mat
+OS-5,2.1.4,phi peak Simulink,0.519,0.5194001175945248,PASS,pso_rwip_v13_result.mat
+OS-6,2.1.4,ts_phi Simulink,10.72,10.72,PASS,pso_rwip_v13_result.mat
+OS-7,2.1.4/Table 4,ts_phi RK4,10.629,10.629,PASS,Test_LongHorizon_v13_results.mat R1(1)
+OS-8,2.1.4/Table 4,ts_theta RK4,2.777,2.777,PASS,Test_LongHorizon_v13_results.mat R1(1)
+OS-9,2.1.4/Table 4,phi peak RK4,0.517,0.5167158044924512,PASS,Test_LongHorizon_v13_results.mat R1(1)
+OS-10,2.1.4,J of PSO result,0.314771,0.31477065773646873,PASS,pso_rwip_v13_result.mat
+OS-11,MATLAB vs Python,IAEphi(600) PSO-FLC relative difference,0.0,1.6997154022067119e-13,PASS,both
+PD-L2a,2.3.3,L2 change (min),3.83,3.828391895256936,PASS,summary.json
+PD-L2b,2.3.3,L2 change (max),4.06,4.0583478780496485,PASS,summary.json
+PD-rela,2.3.3,relative change % (min),17.7,17.70232879807326,PASS,summary.json
+PD-relb,2.3.3,relative change % (max),19.3,19.275223472694837,PASS,summary.json
+PD-infa,2.3.3,Linf (min),0.018,0.01812678575515747,PASS,summary.json
+PD-infb,2.3.3,Linf (max),0.024,0.024125938303768635,PASS,summary.json
+CL-1,2.3.1,largest pre-clip |a| in 60 evaluated runs,0.86,0.864140202493943,PASS,clipping_60s.csv + disturbance csv
+CL-2,2.3.1,max residual clip steps,0.0,0.0,PASS,csv
+CL-3,2.3.1,max total-clip ms steps in impulse runs,8.0,8.0,PASS,disturbance csv
+CL-4,2.3.1,total clip in nominal,0.0,0.0,PASS,clipping_60s.csv
+CL-5,2.3.1,number of evaluated runs = 10 policies x raw/corr x 3 scen (impulse file rows 40 + nominal 20),60.0,60.0,PASS,csv rows
+SS-1,2.3.4,bias limit V,5.89,5.888629627803157,PASS,summary.json
+SS-2,2.3.4,bias limit action,0.589,0.5888629627803157,PASS,summary.json
+SS-3,2.3.4,0.035/Kp rad,8.0,7.994079812892852,PASS,summary.json
+SS-4,2.3.4/S6,variants (of 20) with |error|<1e-12,19.0,19.0,PASS,steady_state_check.csv
+SS-5,S6,max error among the 19 is <= 2.2e-13 (inequality),2.2e-13,2.1338486533295509e-13,PASS,steady_state_check.csv
+SS-6,3.8,phi_ss at b=+0.3 (sim),-2.7317,-2.731731821964406,PASS,bias_injection_sweep.csv
+SS-7,3.8,phi_ss at b=-0.3 (sim),2.7317,2.731731821964343,PASS,bias_injection_sweep.csv
+SS-8,3.8,injection r (11 pts),0.996,0.9963339586952734,PASS,summary.json
+SS-9,3.9,injection ratio min,8.12,8.116387163957812,PASS,summary.json
+SS-10,3.9,injection ratio max,10.78,10.781754648096554,PASS,summary.json
+H-1,3.9/Table 11,median IAEphi 60 s raw BC+TD3,111.57,111.56951003065997,PASS,summary.json
+H-2,3.9/Table 11,median IAEphi 600 s raw BC+TD3,1144.59,1144.594020871654,PASS,summary.json
+H-3,3.9,ratio of medians,10.26,10.259021667811508,PASS,summary.json
+H-4a,3.9,BC+TD3 raw per-seed ratios (min),7.01,7.005254104488763,PASS,summary.json
+H-4b,3.9,BC+TD3 raw per-seed ratios (max),10.7,10.699812384846505,PASS,summary.json
+H-5a,3.9,BC-only raw per-seed ratios (min),5.67,5.670302811745233,PASS,summary.json
+H-5b,3.9,BC-only raw per-seed ratios (max),10.83,10.82987396497197,PASS,summary.json
+H-6,3.9,negative intercepts count (BC+TD3 raw),4.0,4.0,PASS,summary.json
+H-7,3.9,gap raw 60 s vs PSO-FLC,34.75,34.745587444336564,PASS,summary.json
+H-8,3.9,gap raw 600 s vs PSO-FLC,356.46,356.45571225549105,PASS,summary.json
+H-9,3.9,gap unbias,1.73,1.7283542812529933,PASS,summary.json
+H-10,3.9,BC-only s3 raw IAEtheta(600),0.077,0.0770272702452489,PASS,runs_600s.csv
+H-11,3.9,ratio IAEtheta 600/60,2.1,2.1055439969198737,PASS,runs_600s.csv
+M-1,3.7,BC-only max |aBias|,0.0054,0.0053760512118619,PASS,runs_600s.csv
+M-2,3.7,BC-only unbias median IAEphi,4.22,4.217119157916598,PASS,runs_600s.csv
+M-3,3.7,BC-only unbias min IAEphi,3.99,3.994366938094145,PASS,runs_600s.csv
+M-4,3.7,BC-only unbias max IAEphi,11.88,11.876240744203612,PASS,runs_600s.csv
+M-5,3.7,BC-only unbias median IAEtheta,0.0288,0.0287641083374523,PASS,runs_600s.csv
+M-6,3.7,BC-only unbias min IAEtheta,0.028,0.0279826953562108,PASS,runs_600s.csv
+M-7,3.7,BC-only unbias max IAEtheta,0.0314,0.0314167633263456,PASS,runs_600s.csv
+M-8,3.7,BC-only raw median IAEphi,12.94,12.936883264364836,PASS,runs_600s.csv
+M-9,3.7,paired median dIAEphi after unbias,1.15,1.146925600090868,PASS,summary.json
+M-10,3.7,sign-flip p IAEphi,0.63,0.625,PASS,summary.json
+M-11,3.7,dIAEtheta median,0.0009,0.0008804070975999834,PASS,summary.json
+M-12,3.7,sign-flip p IAEtheta,0.94,0.9375,PASS,summary.json
+M-13,3.7,median IAEphi unbias BC+TD3 above PSO-FLC (5.55 vs 3.211),5.55,5.549816667446242,PASS,runs_600s.csv
+M-14,3.6.1,paired change min raw->unbias (rad s),-285.3,-285.2807624291599,PASS,summary.json
+M-15,3.6.1,paired change max raw->unbias,-5.5,-5.4714950004033405,PASS,summary.json
+M-16,3.6.1,unbias/PSO-FLC factor min,1.1,1.102809008343665,PASS,runs_600s.csv
+M-17,3.6.1,factor max,3.8,3.797568601202892,PASS,runs_600s.csv
+M-18,3.6.1,factor median,1.73,1.7283542812529933,PASS,runs_600s.csv
+M-19,3.6.1,seeds meeting +20% criterion,2.0,2.0,PASS,runs_600s.csv
+M-20,3.6.1,median % above PSO-FLC (corrected in Round 3 from 21.0),21.1,21.097481416636498,PASS,runs_600s.csv
+ST-1,3.6.1/Abstract,Pearson |aBias|,0.991,0.9914622136881011,PASS,summary.json
+ST-2,3.6.1,signed r,0.64,0.6398038968613714,PASS,summary.json
+ST-3,3.6.1,LOO min,0.9893,0.989317834426116,PASS,summary.json
+ST-4,3.6.1,LOO max,0.9987,0.9986795557588447,PASS,summary.json
+ST-5,4.3,Fisher CI low,0.87,0.8717039586480179,PASS,summary.json
+ST-6,4.3,permutation p,0.008,0.008333333333333333,PASS,summary.json
+PI-0.01a,3.9,std pi-pi0 box 0.01 (min),0.01,0.0099073311791889,PASS,pi_minus_pi0_neighbourhood.csv (BC+TD3 only)
+PI-0.01b,3.9,std pi-pi0 box 0.01 (max),0.014,0.0139281717327741,PASS,pi_minus_pi0_neighbourhood.csv (BC+TD3 only)
+PI-0.1a,3.9,std pi-pi0 box 0.1 (min),0.084,0.0837602301618285,PASS,pi_minus_pi0_neighbourhood.csv (BC+TD3 only)
+PI-0.1b,3.9,std pi-pi0 box 0.1 (max),0.11,0.1104942153018328,PASS,pi_minus_pi0_neighbourhood.csv (BC+TD3 only)
+PI-Ja,S3,Jacobian norm (min),1.7,1.701800409121426,PASS,pi_jacobian_at_origin.csv
+PI-Jb,S3,Jacobian norm (max),2.4,2.441082356805865,PASS,pi_jacobian_at_origin.csv
+PI-ss,3.9,a_ss seed1 raw,-0.226,-0.2260211900331382,PASS,steady_state_check.csv
+MX-1,Python vs MATLAB,max relative diff raw IAEphi 60 s (10 policies),0.0,4.183606109405524e-07,PASS,BC_vs_TD3_5seed_paired csv
+T9-s1-aBias,Table 9,seed 1 aBias,-0.1199,-0.1199195942772862,PASS,runs_600s.csv / paired_changes.csv
+T9-s1-IAEtheta_raw,Table 9,seed 1 IAEtheta raw,0.03442,0.0344172221143795,PASS,runs_600s.csv / paired_changes.csv
+T9-s1-IAEtheta_unbias,Table 9,seed 1 IAEtheta unbias,0.03122,0.0312204332615502,PASS,runs_600s.csv / paired_changes.csv
+T9-s1-IAEphi_raw,Table 9,seed 1 IAEphi raw,111.57,111.56951003065996,PASS,runs_600s.csv / paired_changes.csv
+T9-s1-IAEphi_unbias,Table 9,seed 1 IAEphi unbias,5.975,5.975222704939985,PASS,runs_600s.csv / paired_changes.csv
+T9-s1-rho_raw,Table 9,seed 1 rho raw,0.3314,0.3313609373596245,PASS,runs_600s.csv / paired_changes.csv
+T9-s1-rho_unbias,Table 9,seed 1 rho unbias,0.24,0.2400107486443223,PASS,runs_600s.csv / paired_changes.csv
+T9-s2-aBias,Table 9,seed 2 aBias,-0.0038,-0.0037729295201196,PASS,runs_600s.csv / paired_changes.csv
+T9-s2-IAEtheta_raw,Table 9,seed 2 IAEtheta raw,0.02498,0.0249808678700889,PASS,runs_600s.csv / paired_changes.csv
+T9-s2-IAEtheta_unbias,Table 9,seed 2 IAEtheta unbias,0.0256,0.0256017580500372,PASS,runs_600s.csv / paired_changes.csv
+T9-s2-IAEphi_raw,Table 9,seed 2 IAEphi raw,9.013,9.012660073965966,PASS,runs_600s.csv / paired_changes.csv
+T9-s2-IAEphi_unbias,Table 9,seed 2 IAEphi unbias,3.541,3.541165073562625,PASS,runs_600s.csv / paired_changes.csv
+T9-s2-rho_raw,Table 9,seed 2 rho raw,0.1226,0.1226447285678461,PASS,runs_600s.csv / paired_changes.csv
+T9-s2-rho_unbias,Table 9,seed 2 rho unbias,0.115,0.1149945781906973,PASS,runs_600s.csv / paired_changes.csv
+T9-s3-aBias,Table 9,seed 3 aBias,0.2768,0.2767640035752602,PASS,runs_600s.csv / paired_changes.csv
+T9-s3-IAEtheta_raw,Table 9,seed 3 IAEtheta raw,0.07721,0.0772114001301986,PASS,runs_600s.csv / paired_changes.csv
+T9-s3-IAEtheta_unbias,Table 9,seed 3 IAEtheta unbias,0.02962,0.0296239586036984,PASS,runs_600s.csv / paired_changes.csv
+T9-s3-IAEphi_raw,Table 9,seed 3 IAEphi raw,297.475,297.4749113645548,PASS,runs_600s.csv / paired_changes.csv
+T9-s3-IAEphi_unbias,Table 9,seed 3 IAEphi unbias,12.194,12.194148935394852,PASS,runs_600s.csv / paired_changes.csv
+T9-s3-rho_raw,Table 9,seed 3 rho raw,0.5185,0.5185194558029645,PASS,runs_600s.csv / paired_changes.csv
+T9-s3-rho_unbias,Table 9,seed 3 rho unbias,0.2841,0.2841205202313113,PASS,runs_600s.csv / paired_changes.csv
+T9-s4-aBias,Table 9,seed 4 aBias,-0.0653,-0.0652805510648608,PASS,runs_600s.csv / paired_changes.csv
+T9-s4-IAEtheta_raw,Table 9,seed 4 IAEtheta raw,0.02593,0.0259278436655106,PASS,runs_600s.csv / paired_changes.csv
+T9-s4-IAEtheta_unbias,Table 9,seed 4 IAEtheta unbias,0.02562,0.0256152250363596,PASS,runs_600s.csv / paired_changes.csv
+T9-s4-IAEphi_raw,Table 9,seed 4 IAEphi raw,68.817,68.81668657114886,PASS,runs_600s.csv / paired_changes.csv
+T9-s4-IAEphi_unbias,Table 9,seed 4 IAEphi unbias,5.443,5.443345219367523,PASS,runs_600s.csv / paired_changes.csv
+T9-s4-rho_raw,Table 9,seed 4 rho raw,0.2325,0.2325131164181575,PASS,runs_600s.csv / paired_changes.csv
+T9-s4-rho_unbias,Table 9,seed 4 rho unbias,0.1754,0.1754323488888484,PASS,runs_600s.csv / paired_changes.csv
+T9-s5-aBias,Table 9,seed 5 aBias,-0.1713,-0.1712897680884317,PASS,runs_600s.csv / paired_changes.csv
+T9-s5-IAEtheta_raw,Table 9,seed 5 IAEtheta raw,0.0427,0.0426964100572656,PASS,runs_600s.csv / paired_changes.csv
+T9-s5-IAEtheta_unbias,Table 9,seed 5 IAEtheta unbias,0.03374,0.033737237653873,PASS,runs_600s.csv / paired_changes.csv
+T9-s5-IAEphi_raw,Table 9,seed 5 IAEphi raw,153.408,153.40843249835152,PASS,runs_600s.csv / paired_changes.csv
+T9-s5-IAEphi_unbias,Table 9,seed 5 IAEphi unbias,5.55,5.549816667446242,PASS,runs_600s.csv / paired_changes.csv
+T9-s5-rho_raw,Table 9,seed 5 rho raw,0.4169,0.4169354011347823,PASS,runs_600s.csv / paired_changes.csv
+T9-s5-rho_unbias,Table 9,seed 5 rho unbias,0.2804,0.2803941285655829,PASS,runs_600s.csv / paired_changes.csv
+T10-BC_median_IAEtheta,Table 10,BC median IAEtheta (stored MATLAB statistics csv),0.0283,0.0283172632097184,PASS,BC_vs_TD3_5seed_statistics csv
+T10-BC_Q1_IAEtheta,Table 10,BC Q1 IAEtheta (stored MATLAB statistics csv),0.0265,0.0265412830213453,PASS,BC_vs_TD3_5seed_statistics csv
+T10-BC_Q3_IAEtheta,Table 10,BC Q3 IAEtheta (stored MATLAB statistics csv),0.0335,0.0334872410448556,PASS,BC_vs_TD3_5seed_statistics csv
+T10-TD3_median_IAEtheta,Table 10,TD3 median IAEtheta (stored MATLAB statistics csv),0.0344,0.0344172232848927,PASS,BC_vs_TD3_5seed_statistics csv
+T10-TD3_Q1_IAEtheta,Table 10,TD3 Q1 IAEtheta (stored MATLAB statistics csv),0.0257,0.0256910994608605,PASS,BC_vs_TD3_5seed_statistics csv
+T10-TD3_Q3_IAEtheta,Table 10,TD3 Q3 IAEtheta (stored MATLAB statistics csv),0.0513,0.0513251599630433,PASS,BC_vs_TD3_5seed_statistics csv
+T10-BC_median_IAEphi,Table 10,BC median IAEphi (stored MATLAB statistics csv),12.94,12.9368845643007,PASS,BC_vs_TD3_5seed_statistics csv
+T10-BC_Q1_IAEphi,Table 10,BC Q1 IAEphi (stored MATLAB statistics csv),10.82,10.8219517702771,PASS,BC_vs_TD3_5seed_statistics csv
+T10-BC_Q3_IAEphi,Table 10,BC Q3 IAEphi (stored MATLAB statistics csv),27.1,27.1024892723933,PASS,BC_vs_TD3_5seed_statistics csv
+T10-TD3_median_IAEphi,Table 10,TD3 median IAEphi (stored MATLAB statistics csv),111.57,111.569513101081,PASS,BC_vs_TD3_5seed_statistics csv
+T10-TD3_Q1_IAEphi,Table 10,TD3 Q1 IAEphi (stored MATLAB statistics csv),53.87,53.8656827651086,PASS,BC_vs_TD3_5seed_statistics csv
+T10-TD3_Q3_IAEphi,Table 10,TD3 Q3 IAEphi (stored MATLAB statistics csv),189.43,189.425043537508,PASS,BC_vs_TD3_5seed_statistics csv
+T10-BC_median_rho,Table 10,BC median rho (stored MATLAB statistics csv),0.2282,0.228166189343314,PASS,BC_vs_TD3_5seed_statistics csv
+T10-TD3_median_rho,Table 10,TD3 median rho (stored MATLAB statistics csv),0.3314,0.331360928704425,PASS,BC_vs_TD3_5seed_statistics csv
+T10-ab-BC_median,Table 10,|aBias| BC median,0.00256,0.0025605286639421,PASS,runs_600s.csv
+T10-ab-BC_min,Table 10,|aBias| BC min,0.00091,0.0009094588549404,PASS,runs_600s.csv
+T10-ab-BC_max,Table 10,|aBias| BC max,0.00538,0.0053760512118619,PASS,runs_600s.csv
+T10-ab-TD3_median,Table 10,|aBias| TD3 median,0.11992,0.1199195942772862,PASS,runs_600s.csv
+T10-ab-TD3_min,Table 10,|aBias| TD3 min,0.00377,0.0037729295201196,PASS,runs_600s.csv
+T10-ab-TD3_max,Table 10,|aBias| TD3 max,0.27676,0.2767640035752602,PASS,runs_600s.csv
+T10-ratio,3.7,IAEphi ratio TD3/BC medians (8.6),8.6,8.62414073083382,PASS,statistics csv
+T10-pct1,3.7,BC-only above PSO-FLC IAEtheta (%) 15.8,15.8,15.755942721333893,PASS,statistics csv
+T10-pct2,3.7,BC+TD3 above PSO-FLC IAEtheta (%) 40.7,40.7,40.69149612686098,PASS,statistics csv
+M-21,3.7,HL estimate IAEphi,0.83,0.8253028503604418,PASS,bco_td3_paired.csv
+M-22,3.7,range low,-6.33,-6.32642407675737,PASS,bco_td3_paired.csv
+M-23,3.7,range high,7.98,7.977029777478253,PASS,bco_td3_paired.csv
+M-24,3.7,IAEtheta range low,-0.0031,-0.0031488833010926,PASS,bco_td3_paired.csv
+M-25,3.7,IAEtheta range high,0.0023,0.0023204743275274,PASS,bco_td3_paired.csv
+F4-1,Figure 4 / 2.3.3,number of seeds behind the L2 range,5.0,5.0,PASS,param_displacement.csv
+F4-2,Figure 4,L2 min printed in the figure,3.83,3.828391895256936,PASS,param_displacement.csv
+F4-3,Figure 4,L2 max printed in the figure,4.06,4.0583478780496485,PASS,param_displacement.csv
+F4-4,Figure 4 caption,actor parameter count (6x256+256+256x256+256+256+1),67841.0,67841.0,PASS,"architecture, Table 3 / Section 2.3.3"
+F4-5,Figure 4 caption,n_params of the ALL rows,67841.0,67841.0,PASS,param_displacement.csv
+F4-6,Figure 4,relative change min (%) vs L2 of BC-only weights,17.7,17.70232879807326,PASS,param_displacement.csv
+F4-7,Figure 4,relative change max (%),19.3,19.275223472694837,PASS,param_displacement.csv
+INJ-1,3.9/S10,ratio at b=-0.02 (minimum of the sweep),8.12,8.116387163957809,PASS,bias_injection_sweep.csv
+INJ-2,3.9/S10,ratio at b=+0.10 (maximum of the sweep),10.78,10.781754648096554,PASS,bias_injection_sweep.csv
+INJ-3,S10,ratio at b=+0.02,9.14,9.13956127101002,PASS,bias_injection_sweep.csv
+INJ-4,S10,largest ratio on the negative-b side,10.31,10.306909432178243,PASS,bias_injection_sweep.csv
+INJ-5,S10,number of non-zero b in the sweep,10.0,10.0,PASS,bias_injection_sweep.csv
+T10p-BC-only_IAEtheta-median,proposed Table 10 rows,BC-only IAEtheta median (unbias),0.0288,0.0287641083374523,PASS,runs_600s.csv
+T10p-BC-only_IAEtheta-Q1,proposed Table 10 rows,BC-only IAEtheta Q1 (unbias),0.0286,0.028553337468626573,PASS,runs_600s.csv
+T10p-BC-only_IAEtheta-Q3,proposed Table 10 rows,BC-only IAEtheta Q3 (unbias),0.03,0.030041678984176423,PASS,runs_600s.csv
+T10p-BC-only_IAEphi-median,proposed Table 10 rows,BC-only IAEphi median (unbias),4.22,4.217119157916598,PASS,runs_600s.csv
+T10p-BC-only_IAEphi-Q1,proposed Table 10 rows,BC-only IAEphi Q1 (unbias),4.04,4.035452149101271,PASS,runs_600s.csv
+T10p-BC-only_IAEphi-Q3,proposed Table 10 rows,BC-only IAEphi Q3 (unbias),6.59,6.59028301468774,PASS,runs_600s.csv
+T10p-BC+TD3_IAEtheta-median,proposed Table 10 rows,BC+TD3 IAEtheta median (unbias),0.0296,0.0296239586036984,PASS,runs_600s.csv
+T10p-BC+TD3_IAEtheta-Q1,proposed Table 10 rows,BC+TD3 IAEtheta Q1 (unbias),0.0256,0.025611858289779,PASS,runs_600s.csv
+T10p-BC+TD3_IAEtheta-Q3,proposed Table 10 rows,BC+TD3 IAEtheta Q3 (unbias),0.0318,0.0318496343596309,PASS,runs_600s.csv
+T10p-BC+TD3_IAEphi-median,proposed Table 10 rows,BC+TD3 IAEphi median (unbias),5.55,5.549816667446242,PASS,runs_600s.csv
+T10p-BC+TD3_IAEphi-Q1,proposed Table 10 rows,BC+TD3 IAEphi Q1 (unbias),4.97,4.9678001829162985,PASS,runs_600s.csv
+T10p-BC+TD3_IAEphi-Q3,proposed Table 10 rows,BC+TD3 IAEphi Q3 (unbias),7.53,7.5299542625537015,PASS,runs_600s.csv
+T10p-d1,proposed Table 10 rows,paired difference IAEphi: median,1.15,1.146925600090868,PASS,runs_600s.csv
+T10p-d2,proposed rows,paired IAEphi min,-6.33,-6.32642407675737,PASS,runs_600s.csv
+T10p-d3,proposed rows,paired IAEphi max,7.98,7.977029777478253,PASS,runs_600s.csv
+T10p-d4,proposed rows,n seeds with BC+TD3 higher IAEphi after unbias (3 of 5),3.0,3.0,PASS,runs_600s.csv
