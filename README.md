@@ -22,4 +22,4 @@ Tables 4–11 and Figures 5–7: run `Compare_v13_robust.m` on the stored agents
 - `matlab_core/` the authors' plant, PSO, FLC/SMC-ESO, training and evaluation code (unchanged).
 - `round5_scripts/` revision experiments E0–E5, E7/E8 and the E2a/E2b training variants.
 - `results/` result CSVs and analysis text; `docs/` protocol and reports; `python_posthoc/` independent Python re-implementation and analysis scripts.
-- Network checkpoints (BC-only, BC+TD3, E1/E2a/E2b agents; about 300 MB) are **not** in this folder yet; add them with Git LFS or a release asset before publishing.
+- `checkpoints/` trained actors (MATLAB `.mat`, about 1.3 MB each): `stored_paper/` (BC-only and BC+TD3, seeds 1-5, the networks of Tables 4-11), `E1_retuned/` (retuned fine-tuning), `E2a_bias_free/` (actor without bias, pi(0)=0 by construction), `E2b_origin_penalty/` (penalty 100*pi(0)^2 in the BC loss). File names: `agent_bconly_seed<k>.mat` = BC-only, `agent_bc_seed<k>.mat` = BC+TD3.
