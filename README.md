@@ -26,7 +26,7 @@ Tables 4–11 and Figures 5–7: run `Compare_v13_robust.m` on the stored agents
 
 
 ## Supplementary report
-`docs/Supplementary_Report_Tables_S1-S11.docx` holds Tables S1-S11 (clipping frequency, parameter change, residual near the origin, paired statistics, ...). Tables S12-S13 (ESO-bandwidth sweep, oracle gain) are `results/E7E8_MATLAB_2026a.csv`. Round-5 protocol and reports: `docs/Round5_Protocol_E1-E8.md`, `docs/Round5_E2a_Report.md`, `Round5_E2b_Report.md`, `Round5_E2c_Report.md`, `Round5_E3b_Report.md` (PSO-FLC retuned at 100 Hz: `round5_scripts/r5_E3b.m`, results in `results/E3b_final/`, analysis `results/E3b_final_analysis.txt`).
+`docs/Supplementary_Report_Tables_S1-S11.docx` holds Tables S1-S11 (clipping frequency, parameter change, residual near the origin, paired statistics, ...). Tables S12-S13 (ESO-bandwidth sweep, oracle gain) are `results/E7E8_MATLAB_2026a.csv`. Round-5 protocol and reports: `docs/Round5_Protocol_E1-E8.md`, `docs/Round5_E2a_Report.md`, `Round5_E2b_Report.md`, `Round5_E2c_Report.md`, `Round5_E3b_Report.md` and `Round5_E6_Report.md` (end-to-end TD3 baseline: `round5_scripts/r5_E6.m`, `r5_E6_env.m`, results `results/E6_eval/`, agents `checkpoints/E6_e2e_td3/`) (PSO-FLC retuned at 100 Hz: `round5_scripts/r5_E3b.m`, results in `results/E3b_final/`, analysis `results/E3b_final_analysis.txt`).
 
 ## Known gaps
 - The original script of the bias-injection experiment was not kept; the injection results were regenerated with `python_posthoc/phlib.py` under the stated clipping order.

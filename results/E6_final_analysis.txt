@@ -1,0 +1,47 @@
+E6: end-to-end TD3 (3 seeds, 800 episodes) vs PSO-FLC and BC+TD3 (unbiased) at 100 Hz, S1 (8 cases, 60 s) + S2 (kicks 1, 2 rad/s)
+Controller  E2E TD3 s1  E2E TD3 s2
+C                                 
+Ip +30%         401.27      603.12
+Ip -30%         368.47      604.47
+Kt +30%         394.09      604.05
+Kt -30%         401.54      603.30
+adverse         402.90      607.83
+kick 1.0        388.99      429.56
+kick 2.0        339.93      517.83
+mgl +30%        402.61      607.49
+mgl -30%        399.58      598.40
+nominal         401.42      603.66
+
+IAEtheta
+Controller  E2E TD3 s1  E2E TD3 s2
+C                                 
+Ip +30%         0.1786      0.0696
+Ip -30%         0.1896      0.0690
+Kt +30%         0.1839      0.0689
+Kt -30%         0.1792      0.0701
+adverse         0.1416      0.0571
+kick 1.0        0.1537      0.1415
+kick 2.0        0.3364      0.2540
+mgl +30%        0.1412      0.0568
+mgl -30%        0.2466      0.0928
+nominal         0.1783      0.0694
+
+Recovered per seed (of 10):
+Controller
+E2E TD3 s1    0
+E2E TD3 s2    0
+E2E TD3 s3    0
+Diverged per seed (of 10):
+Controller
+E2E TD3 s1     0
+E2E TD3 s2     0
+E2E TD3 s3    10
+thEnd/phEnd medians per seed:
+             thEnd    phEnd
+Controller                 
+E2E TD3 s1  0.0000   7.0937
+E2E TD3 s2  0.0001  12.8725
+E2E TD3 s3     NaN      NaN
+
+Reference at 100 Hz: PSO-FLC recovered 10 / 10 ; BC+TD3 unbiased 50 / 50
+PSO-FLC IAEphi median over cases 3.151 IAEtheta 0.0246 ; BC+TD3 IAEphi 5.583 IAEtheta 0.0295
