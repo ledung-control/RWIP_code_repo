@@ -284,7 +284,8 @@ fig.set_size_inches(W_CM_FIG / 2.54,
 print("Fig. 1  view %.3f x %.3f data units -> %.2f cm x %.2f cm"
       % (_x1 - _x0, _y1 - _y0, W_CM_FIG,
          W_CM_FIG * (_y1 - _y0) / (_x1 - _x0)))
-stem = "/tmp/wrip/figsrc/Fig1_RWIP_8cm"
+import os
+stem = os.path.join(os.path.dirname(os.path.abspath(__file__)), "Fig1_RWIP_8cm")
 fig.savefig(stem + "_1250dpi.png", dpi=1250, facecolor="white")
 fig.savefig(stem + ".svg", facecolor="white")
 fig.savefig(stem + ".pdf", facecolor="white")

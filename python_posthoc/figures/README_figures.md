@@ -6,3 +6,6 @@
 - `make_fig7.py`: Fig. 7 from `results/fig7_traj.pkl`.
 - `draw_fig1.py` ... `draw_fig5.py`, `fig_common.py`: original drawing scripts for Figs. 1-5 (Fig. 1, 3, 4 diagrams; Fig. 2 membership functions/surface; Fig. 5 nominal responses). The manuscript versions were produced from these with the text size raised to 11 pt, the panel captions/titles removed and the output at 600 dpi; the exact edited copies were not archived, so the PNG files above are the reference.
 Run with python3 make_fig6.py etc. from this folder (NumPy, SciPy, pandas, Matplotlib; Liberation Serif font optional).
+
+- `make_final_figures.py` + `masters_submitted/`: generates the submitted Figs. 1-4 PNG files from the archived masters.
+- `draw_fig5.py --manuscript`: Fig. 5 in the manuscript style from `results/archived_tables4-7/Compare_v13_results.mat`.

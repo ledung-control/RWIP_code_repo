@@ -1,0 +1,5 @@
+configuration,us_per_step
+PSO-FLC (201x201 look-up) = lookup + outer loop,0.339185
+SMC-ESO cascade = SMC step + outer loop,0.687655
+PSO-FLC + SMC-ESO = lookup + SMC step + outer loop,0.931745
+PSO-FLC (direct evalfis) = evalfis + outer loop,262.49252
